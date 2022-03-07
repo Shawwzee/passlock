@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passlock</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header id="logo">
+        <div class="container">
+            <img src="assets/logo.png" alt="Passlcok" id="logo">
+        </div>
+    </header>
+
+    <section id="main-body">
+        <div class="container">
+            <div class="inputs">
+                <h1 class="font">Password Generator</h1>
+                <div class="passwordGen">
+                    <textarea readonly class="font" id="passwordView" rows="1" type="text"></textarea>
+                    <i id="copyBtn" class="fas fa-clipboard"></i>
+                </div>
+                <div class="options font">
+                    <div id="range-bar" class="input-group align-center">
+                        <p>Password Length</p>
+                        <input id="range" type="range" step="1" max="30" min="10" id="passwordLngth">
+                        <p id="passLngth">20</p>
+                    </div>
+                    <div class="input-group align-center">
+                        <p>Include Uppercase</p>
+                        <input type="checkbox" checked id="uppercase">
+                    </div>
+                    <div class="input-group align-center">
+                        <p>Include Lowercase</p>
+                        <input type="checkbox" checked id="lowercase">
+                    </div>
+                    <div class="input-group align-center">
+                        <p>Include Numbers</p>
+                        <input type="checkbox" checked id="numbers">
+                    </div>
+                    <div class="input-group align-center">
+                        <p>Include Symbols</p>
+                        <input type="checkbox" checked id="symbols">
+                    </div>
+                </div>
+                <button id="generate" class="genBtn">Generate</button>
+            </div>
+        </div>
+    </section>
+
+    <footer><span class="font">Made by Shawn Sutton</span></footer>
+
+    <!-- Javascript Link -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
